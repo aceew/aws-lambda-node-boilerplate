@@ -6,6 +6,10 @@
   "directories": {
     "test": "tests"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aceew/aws-lambda-node-boilerplate.git"
+  },
   "scripts": {
     "test": "npm run-script lint && npm run-script unit",
     "lint": "eslint {./*.js\\,./controllers/*.js\\,./models/*.js\\,./tests/*.js}",
@@ -14,7 +18,10 @@
     "unit-es5": "babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/mocha/bin/_mocha -- tests/*.js",
     "deploy": "node-lambda deploy",
   },
-  "author": "Aaron Williams",
+  "author": {
+    "name": "Aaron Williams",
+    "url": "https://github.com/aceew"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.7.5",

@@ -14,8 +14,8 @@
     "test": "npm run-script lint && npm run-script unit",
     "lint": "eslint {./*.js\\,./controllers/*.js\\,./models/*.js\\,./tests/*.js}",
     "compile": "babel . --out-dir ../build --ignore='node_modules/**\\,coverage/**' --copy-files",
-    "unit": "mocha $(find tests -name '*.js')",
-    "unit-es5": "babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/mocha/bin/_mocha -- tests/*.js",
+    "unit": "babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/mocha/bin/_mocha -- tests/*.js",
+    "unit-es5": "mocha $(find tests -name '*.js')",
     "deploy": "node-lambda deploy",
   },
   "author": {

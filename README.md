@@ -14,7 +14,7 @@ Features:
 ### Getting Started
 Clone the project and delete the .git folder.
 ```sh
-git clone --depth=1 --brach=master git://github.com/aceew/aws-lambda-node-boilerplate.git myNewRepo/
+git clone --depth=1 --branch=master git://github.com/aceew/aws-lambda-node-boilerplate.git myNewRepo/
 rm -rf myNewRepo/.git/
 ```
 Development should take place in the `src/` directory following the directory structure within.
@@ -51,7 +51,7 @@ Scripts available in the package.json
 - Commit to your feature branch
 - Create a PR back into master
 
-Please make sure the contribution is compliant with the standards outlined in the Standards section.
+Please make sure the contribution is compliant with the standards outlined in the rest of the repo.
 
 As of yet no CI plan is set up for this project but I do plan on adding it.
 

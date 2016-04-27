@@ -16,7 +16,7 @@
     "compile": "babel . --out-dir ../build --ignore='node_modules/**\\,coverage/**' --copy-files",
     "unit": "babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/mocha/bin/_mocha -- tests/*.js",
     "unit-es5": "mocha $(find tests -name '*.js')",
-    "deploy": "node-lambda deploy",
+    "deploy": "node-lambda deploy"
   },
   "author": {
     "name": "Aaron Williams",
